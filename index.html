@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuppyDev Capstone-2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@400..700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Brand logo stays on the far left -->
+        <a class="navbar-brand" href="#">GuppyDev</a> 
+        
+        <!-- Toggler button moves to the far right -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+        </button> 
+        
+        <!-- Offcanvas menu container sliding from the right side -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Add your links here -->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#what-i-can-do">What I can do</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#get-in-touch">Get in touch</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </nav>  
+    
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="px-4 px-md-5 pt-5 mt-5">
+            <div class="row align-items-center g-5 py-5">
+                <!-- Text column comes first (Left side) -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 lh-1 mb-3 text-start">About Me</h1>
+                    <p class="lead text-start">My name is GuppyDev, an alias obviously, My favourite color is purple, I love cats, I'm determined to 
+                        learn full-stack web development and Python coding. This is my second capstone project in my journey and looking at the two webpages
+                    that I've built so far, I am actually surprised by my progress.</p>
+                </div>
+                <!-- Image column comes second (Right side) -->
+                <div class="col-10 col-sm-8 col-lg-6"> 
+                    <img src="./images/Profile.png" class="d-lg-end d-block mx-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills and Technology -->
+    <section id="what-i-can-do">
+        <h2 class="px-5 py-5">What I can do</h2>
+        <div class="px-5 d-flex gap-5 justify-content-start py-5"> 
+            <span class="badge d-flex align-items-center p-2 pe-3 fs-5 text-dark-emphasis bg-dark-subtle border custom-badge-border rounded-pill"> 
+                <img class="rounded-circle me-1" width="24" height="24" src="./images/html-removebg-preview.png" alt="">HTML
+            </span> 
+            <span class="badge d-flex align-items-center p-2 pe-3 fs-5 text-dark-emphasis bg-dark-subtle border custom-badge-border rounded-pill"> 
+                <img class="rounded-circle me-1" width="24" height="24" src="./images/CSS-removebg-preview.png" alt="">CSS
+            </span> 
+            <span class="badge d-flex align-items-center p-2 pe-3 fs-5 text-dark-emphasis bg-dark-subtle border custom-badge-border rounded-pill"> 
+                <img class="rounded-circle me-1" width="24" height="24" src="./images/Python-removebg-preview.png" alt="">Python
+            </span> 
+        </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience">
+        <div class="py-5 px-5">
+            <h2 class="mb-4">Experience</h2>
+    <!-- timeline item 1 -->
+            <div class="row">
+                <!-- timeline item 1 left dot -->
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge rounded-pill border custom-badge-border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-end">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <!-- timeline item 1 event content -->
+                <div class="col py-2">
+                    <div class="card">
+                        <div class="card-body">
+                        <div class="float-right text-muted">2025</div>
+                        <h4 class="card-title text-muted">Student Support</h4>
+                        <p class="card-text">A whole lot of helping people to navigate the education website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 2 -->
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-end">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge rounded-pill border custom-badge-border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-end">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card border custom-badge-border shadow">
+                        <div class="card-body">
+                        <div class="float-right">2026</div>
+                        <h4 class="card-title">IT Intern</h4>
+                        <p class="card-text">Technical support<br />booking out of stock<br />Monitoring of project progress</p>
+                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t2_details" data-bs-toggle="collapse">Show Extra ▼</button>
+                        <div class="collapse border" id="t2_details">
+                            <div class="p-2 font-monospace">
+                                <div>Python - Angela Yu's 100 Days of Code™: The Complete Python Pro Bootcamp</div>
+                                <div>HTML - Angela Yu's The Complete Full-Stack Web Development Bootcamp</div>
+                                <div>CSS - Angela Yu's The Complete Full-Stack Web Development Bootcamp</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 3 -->
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-end">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge rounded-pill border custom-badge-border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-end">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card">
+                        <div class="card-body">
+                        <div class="float-right text-muted">Loading ...</div>
+                        <p class="text-muted">The future will inform the past when the time comes.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="py-5">
+            <h2>Projects</h2>
+            <div class="dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-3 rounded-3 shadow-lg" data-bs-theme="dark">
+            <nav class="col-lg-8">
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li>
+                        <a href="https://guppy-dev9.github.io/Web-Development-Projects/" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-1" viewBox="0 0 16 16">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+    </svg>
+                        <div> <strong class="d-block">Online Portfolio</strong> <small>First Capstone Project where I made a website with only HTML</small> </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-2" viewBox="0 0 16 16">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+    </svg>
+                        <div> <strong class="d-block">Personal Website</strong> <small>Second Capstone Project where I made an entire, functional website utilizing bootstrap, HTML, and CSS</small> </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+    </svg>
+                        <div> <strong class="d-block">Loading...</strong> <small>I haven't gotten that far yet.</small> </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me -->
+    <section id="get-in-touch">
+        <div class="container-fluid px-5  py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 lh-1 mb-3">Get in touch</h1>
+                <p class="col-lg-10 fs-4">Not much of a talker but if its to learn or work then I'd be delighted to have a conversation.</p>
+            </div>
+            <div class="col-md-10 col-lg-5 ms-auto">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating"> <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> <label for="floatingInput">Email address</label> </div>
+                    <div class="input-group py-3">
+                        <div class="input-group-prepend"></div>
+                        <textarea class="form-control py-2" aria-label="With textarea" placeholder="Your message here "></textarea>
+                    </div>
+                    <button class="w-100 btn btn-lg btn custon-btn-style" type="submit">Get in touch</button> 
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+            <svg class="bi" width="30" height="24" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2026 GuppyDev</span> 
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+            <a class="text-body-secondary" href="https://github.com/Guppy-dev9" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>
+            </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
